@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickLab - Entrenamientos de Taekwondo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y Navegación Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="entrenamientos.html">Entrenamientos</a></li>
+                <li><a href="avances.html">Avances</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- Hero Section con foto de fondo del combate -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Entrenamientos<br>de Taekwondo</h1>
+                <p class="hero-subtitle">
+                    calendario<br>
+                    vista de entrenamientos<br>
+                    horarios<br>
+                    avances<br>
+                    próximos eventos
+                </p>
+                <div class="hero-actions">
+                    <button type="button" class="btn-more-info">Más información</button>
+                </div>
+
+                <!-- Tarjetas de Estadísticas Principales -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-red"></span>
+                        <h2 class="stat-value">3</h2>
+                        <p class="stat-label">sesiones</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-green"></span>
+                        <h2 class="stat-value">4h 20m</h2>
+                        <p class="stat-label">entrenamientos</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-purple"></span>
+                        <h2 class="stat-value">75%</h2>
+                        <p class="stat-label">meta semanal</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-blue"></span>
+                        <h2 class="stat-value">24</h2>
+                        <p class="stat-label">días para competir</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planificación Semanal dentro del hero con fondo -->
+            <div class="planificacion-wrapper">
+                <div class="section-tag">PLANIFICACIÓN SEMANAL</div>
+                <h2 class="section-title">14 – 20 de abril</h2>
+                <p class="section-subtitle">Tu carga de entrenamiento de un vistazo.</p>
+
+                <div class="semana-slider">
+                    <article class="dia-card">
+                        <span class="dia-nombre">lun</span>
+                        <span class="dia-numero">14</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Técnica</p>
+                        <p class="dia-duracion">60<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">mar</span>
+                        <span class="dia-numero">15</span>
+                        <div class="dia-bar" style="background-color: #9385FF;"></div>
+                        <p class="dia-tipo">Fuerza</p>
+                        <p class="dia-duracion">45<br>min</p>
+                    </article>
+
+                    <!-- Miércoles: día activo con texto verde neón -->
+                    <article class="dia-card dia-activo">
+                        <span class="dia-nombre">mié</span>
+                        <span class="dia-numero">16</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">90<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">jue</span>
+                        <span class="dia-numero">17</span>
+                        <div class="dia-bar" style="background-color: #FFBF47;"></div>
+                        <p class="dia-tipo">Poomsae</p>
+                        <p class="dia-duracion">50<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">vie</span>
+                        <span class="dia-numero">18</span>
+                        <div class="dia-bar" style="background-color: #2BCBE9;"></div>
+                        <p class="dia-tipo">Rendimiento</p>
+                        <p class="dia-duracion">40<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">sáb</span>
+                        <span class="dia-numero">19</span>
+                        <div class="dia-bar" style="background-color: #FF7658;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">75<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">dom</span>
+                        <span class="dia-numero">20</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Recuperación</p>
+                        <p class="dia-duracion">Descanso</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Próximos retos y eventos -->
+        <section class="retos-section">
+            <div class="retos-header">
+                <div>
+                    <span class="section-tag">PRÓXIMOS RETOS</span>
+                    <h2 class="section-title">Eventos y torneos</h2>
+                    <p class="section-subtitle">Llega preparado dentro y fuera del tatami.</p>
+                </div>
+                <button type="button" class="btn-green-neon">+ Añadir torneo</button>
+            </div>
+
+            <div class="retos-grid">
+                <!-- Tarjeta 1: Open Nacional -->
+                <article class="reto-card">
+                    <div class="reto-main-info">
+                        <div class="reto-badge-fecha">
+                            <span class="badge-dia">28</span>
+                            <span class="badge-mes">nov</span>
+                        </div>
+                        <div class="reto-detalles">
+                            <h3 class="reto-nombre">Open Nacional de Taekwondo</h3>
+                            <p class="reto-lugar">Pabellón de Gimnasia • Cbba, Bol</p>
+                            <span class="reto-categoria">Senior - 68 kg</span>
+                        </div>
+                    </div>
+
+                    <div class="reto-checklist-header">
+                        <span>Preparación</span>
+                        <span class="checklist-count">3/4</span>
+                    </div>
+
+                    <ul class="checklist">
+                        <li class="check-item check-done">
+                            <span class="check-icon">✓</span>
+                            <span class="check-text">Control de peso</span>
+                        </li>
+                        <li class="check-item check-done">
+                            <span class="check-icon">✓</span>
+                            <span class="check-text">Documentación</span>
+                        </li>
+                        <li class="check-item check-pending">
+                            <span class="check-icon">◯</span>
+                            <span class="check-text">Protectores</span>
+                        </li>
+                        <li class="check-item check-pending">
+                            <span class="check-icon">◯</span>
+                            <span class="check-text">Planificación</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Tarjeta 2: Copa Regional Centro -->
+                <article class="reto-card">
+                    <div class="reto-main-info">
+                        <div class="reto-badge-fecha badge-fecha-orange">
+                            <span class="badge-dia">28</span>
+                            <span class="badge-mes">dic</span>
+                        </div>
+                        <div class="reto-detalles">
+                            <h3 class="reto-nombre">Copa Regional Centro</h3>
+                            <p class="reto-lugar">Pabellón Municipal • Toluca</p>
+                            <span class="reto-categoria">Senior - 68 kg</span>
+                        </div>
+                    </div>
+
+                    <div class="reto-checklist-header">
+                        <span>Preparación</span>
+                        <span class="checklist-count">1/4</span>
+                    </div>
+
+                    <ul class="checklist">
+                        <li class="check-item check-done">
+                            <span class="check-icon">✓</span>
+                            <span class="check-text">Control de peso</span>
+                        </li>
+                        <li class="check-item check-pending">
+                            <span class="check-icon">◯</span>
+                            <span class="check-text">Documentación</span>
+                        </li>
+                        <li class="check-item check-pending">
+                            <span class="check-icon">◯</span>
+                            <span class="check-text">Protectores</span>
+                        </li>
+                        <li class="check-item check-pending">
+                            <span class="check-icon">◯</span>
+                            <span class="check-text">Planificación</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Cuenta atrás -->
+        <section class="cuenta-atras-section">
+            <span class="section-tag">CUENTA ATRÁS</span>
+            <h2 class="section-title">24 días para competir</h2>
+            <p class="section-subtitle">Tu plan de preparación está al 68%</p>
+
+            <div class="countdown-card">
+                <div class="countdown-item">
+                    <div class="countdown-pill" style="background-color: #FF7658;"></div>
+                    <h3 class="countdown-value">-0,8 kg</h3>
+                    <p class="countdown-label">Peso objetivo</p>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-pill" style="background-color: #3EE58F;"></div>
+                    <h3 class="countdown-value">9</h3>
+                    <p class="countdown-label">Sesiones restantes</p>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-pill" style="background-color: #9385FF;"></div>
+                    <h3 class="countdown-value">4</h3>
+                    <p class="countdown-label">Sparring programado</p>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-pill" style="background-color: #2BCBE9;"></div>
+                    <h3 class="countdown-value">Listos</h3>
+                    <p class="countdown-label">Documentos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Finalizar sesión -->
+        <section class="finalizar-section">
+            <div class="finalizar-container">
+                <!-- Columna izquierda: Título y Pasos -->
+                <div class="finalizar-intro">
+                    <span class="section-tag">FINALIZAR SESIÓN</span>
+                    <h2 class="section-title">¿Cómo fue el entrenamiento?</h2>
+                    <p class="section-subtitle">Registra los datos para actualizar tu progreso.</p>
+
+                    <div class="pasos-stepper">
+                        <div class="stepper-item step-completed">
+                            <span class="step-num">1</span>
+                            <span class="step-label">Detalles</span>
+                        </div>
+                        <div class="stepper-item">
+                            <span class="step-num">2</span>
+                            <span class="step-label">Sensaciones</span>
+                        </div>
+                        <div class="stepper-item">
+                            <span class="step-num">3</span>
+                            <span class="step-label">Guardado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: Formulario estilo Figma -->
+                <div class="finalizar-form-wrapper">
+                    <form class="finalizar-card" action="#" method="POST">
+                        <div class="card-form-header">
+                            <h3 class="card-form-title">Sparring técnico</h3>
+                            <span class="badge-session-date">MIÉRCOLES - 16 NOV</span>
+                        </div>
+
+                        <div class="form-row-dual">
+                            <div class="form-col">
+                                <label class="field-label">DURACIÓN REAL</label>
+                                <div class="input-container">
+                                    <input type="text" class="input-control" value="80 minutos" readonly>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <label class="field-label">INTENSIDAD</label>
+                                <div class="chips-row">
+                                    <button type="button" class="btn-chip">Baja</button>
+                                    <button type="button" class="btn-chip">Medio</button>
+                                    <button type="button" class="btn-chip chip-selected">Alta</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="field-label">TÉCNICAS PRACTICADAS</label>
+                            <div class="tags-container">
+                                <span class="tag-item">Dollyo chagui</span>
+                                <span class="tag-item">Neryo chagui</span>
+                                <span class="tag-item">Cut technique</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="field-label">NOTAS PERSONALES</label>
+                            <textarea class="textarea-control" rows="3" placeholder="Buen desempeño, mejorar la distancia con el pie delantero. Mayor control en giros y defensas con antebrazo..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="field-label">SENSACIÓN FÍSICA</label>
+                            <div class="chips-row chips-sensacion">
+                                <button type="button" class="btn-chip chip-selected">Con energía</button>
+                                <button type="button" class="btn-chip">Equilibrado</button>
+                                <button type="button" class="btn-chip">Muy cansado</button>
+                                <button type="button" class="btn-chip">Molestias</button>
+                            </div>
+                        </div>
+
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn-green-neon btn-guardar">Guardar sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickLab - Configura tu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y Navegación Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entrenamientos.html">Entrenamientos</a></li>
+                <li><a href="avances.html">Avances</a></li>
+                <li><a href="perfil.html" class="active">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- Hero Section con foto de fondo del atleta con casco azul mirando arriba -->
+        <section class="hero-section hero-perfil">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Configura tu<br>perfil</h1>
+                <p class="hero-subtitle">
+                    Datos deportivos<br>
+                    objetivos<br>
+                    preferencias
+                </p>
+                <div class="hero-actions">
+                    <button type="button" class="btn-more-info">Más información</button>
+                </div>
+
+                <!-- Tarjetas de Estadísticas Principales -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-red"></span>
+                        <h2 class="stat-value">3</h2>
+                        <p class="stat-label">Sesiones</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-green"></span>
+                        <h2 class="stat-value">4h 20m</h2>
+                        <p class="stat-label">Entrenamientos</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-purple"></span>
+                        <h2 class="stat-value">75%</h2>
+                        <p class="stat-label">Meta semanal</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-blue"></span>
+                        <h2 class="stat-value">24</h2>
+                        <p class="stat-label">Días para competir</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planificación Semanal dentro del hero -->
+            <div class="planificacion-wrapper">
+                <div class="section-tag">PLANIFICACIÓN SEMANAL</div>
+                <h2 class="section-title">14 – 20 de abril</h2>
+                <p class="section-subtitle">Tu carga de entrenamiento de un vistazo.</p>
+
+                <div class="semana-slider">
+                    <article class="dia-card">
+                        <span class="dia-nombre">lun</span>
+                        <span class="dia-numero">14</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Técnica</p>
+                        <p class="dia-duracion">60<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">mar</span>
+                        <span class="dia-numero">15</span>
+                        <div class="dia-bar" style="background-color: #9385FF;"></div>
+                        <p class="dia-tipo">Fuerza</p>
+                        <p class="dia-duracion">45<br>min</p>
+                    </article>
+
+                    <article class="dia-card dia-activo">
+                        <span class="dia-nombre">mié</span>
+                        <span class="dia-numero">16</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">90<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">jue</span>
+                        <span class="dia-numero">17</span>
+                        <div class="dia-bar" style="background-color: #FFBF47;"></div>
+                        <p class="dia-tipo">Poomsae</p>
+                        <p class="dia-duracion">50<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">vie</span>
+                        <span class="dia-numero">18</span>
+                        <div class="dia-bar" style="background-color: #2BCBE9;"></div>
+                        <p class="dia-tipo">Rendimiento</p>
+                        <p class="dia-duracion">40<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">sáb</span>
+                        <span class="dia-numero">19</span>
+                        <div class="dia-bar" style="background-color: #FF7658;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">75<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">dom</span>
+                        <span class="dia-numero">20</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Recuperación</p>
+                        <p class="dia-duracion">Descanso</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Principal de Perfil -->
+        <section class="perfil-section">
+            <div class="perfil-section-intro">
+                <h2 class="section-title">Un perfil que te acompaña en el tatami</h2>
+                <p class="section-subtitle">Completa solo lo necesario. Tú decides qué información compartir.</p>
+            </div>
+
+            <!-- Fila superior: Formulario de Datos Deportivos + Tarjeta Próximo Reto -->
+            <div class="perfil-top-grid">
+                <!-- Columna Izquierda: Datos Deportivos -->
+                <form class="perfil-card datos-deportivos-card" action="#" method="POST">
+                    <h3 class="perfil-card-title">Datos deportivos</h3>
+                    <p class="perfil-card-subtitle">Revisa y completa tus datos deportivos.</p>
+
+                    <div class="form-row-dual">
+                        <div class="form-col">
+                            <label class="field-label">NOMBRE VISIBLE</label>
+                            <input type="text" class="input-control" value="Andrea">
+                        </div>
+                        <div class="form-col">
+                            <label class="field-label">CLUB / DOJANG</label>
+                            <input type="text" class="input-control" placeholder="Añadir tu club">
+                        </div>
+                    </div>
+
+                    <div class="form-row-dual">
+                        <div class="form-col">
+                            <label class="field-label">GRADO / CINTURÓN</label>
+                            <div class="select-wrapper">
+                                <select class="input-control select-control">
+                                    <option value="" selected>Seleccionar grado</option>
+                                    <option value="1dan">1° Dan (Cinturón Negro)</option>
+                                    <option value="2dan">2° Dan</option>
+                                    <option value="rojo">Cinturón Rojo</option>
+                                    <option value="azul">Cinturón Azul</option>
+                                    <option value="verde">Cinturón Verde</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label class="field-label">CATEGORÍA COMPETITIVA</label>
+                            <input type="text" class="input-control" value="Senior -68 kg">
+                        </div>
+                    </div>
+
+                    <p class="field-help-text">La categoría se toma de tus torneos. Puedes revisarla cuando cambie.</p>
+
+                    <div class="form-action-left">
+                        <button type="submit" class="btn-green-neon">Guardar cambios</button>
+                    </div>
+                </form>
+
+                <!-- Columna Derecha: Tarjeta Próximo Reto -->
+                <article class="perfil-card proximo-reto-card">
+                    <h3 class="perfil-card-title">Tu próximo reto</h3>
+                    <h4 class="reto-nombre-destacado">Open Nacional de Taekwondo</h4>
+                    <p class="reto-fecha-lugar">10 mayo • Palacio de Deportes, Madrid</p>
+
+                    <div class="reto-meta-countdown">
+                        <h2 class="countdown-highlight">24 días para competir</h2>
+                        <div class="progress-info-row">
+                            <span>Preparación del plan</span>
+                            <span class="progress-percent">68%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 68%;"></div>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="btn-outline-blue">Revisar mi plan</a>
+                </article>
+            </div>
+
+            <!-- Fila Inferior: Preferencias y Privacidad -->
+            <article class="perfil-card preferencias-card">
+                <h3 class="perfil-card-title">Preferencias y privacidad</h3>
+
+                <ul class="preferencias-list">
+                    <li class="preferencia-item">
+                        <div class="preferencia-info">
+                            <h4 class="preferencia-titulo">Recordatorios de entrenamiento</h4>
+                            <p class="preferencia-desc">Elige cuándo recibir avisos.</p>
+                        </div>
+                        <button type="button" class="btn-outline-blue">Configurar</button>
+                    </li>
+
+                    <li class="preferencia-item">
+                        <div class="preferencia-info">
+                            <h4 class="preferencia-titulo">Visibilidad de tus sesiones</h4>
+                            <p class="preferencia-desc">Privadas; solo tú puedes ver tus registros.</p>
+                        </div>
+                        <button type="button" class="btn-outline-blue">Gestionar</button>
+                    </li>
+
+                    <li class="preferencia-item">
+                        <div class="preferencia-info">
+                            <h4 class="preferencia-titulo">Seguridad de tu cuenta</h4>
+                            <p class="preferencia-desc">Gestiona acceso y contraseña.</p>
+                        </div>
+                        <button type="button" class="btn-outline-blue">Revisar</button>
+                    </li>
+                </ul>
+            </article>
+
+            <p class="perfil-footer-disclaimer">Tus datos personales y deportivos no aparecen públicamente.</p>
+        </section>
+    </main>
+</body>
+</html>

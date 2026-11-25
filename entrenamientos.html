@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickLab - Rutinas y Entrenamientos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y Navegación Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entrenamientos.html" class="active">Entrenamientos</a></li>
+                <li><a href="avances.html">Avances</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- Hero Section con foto de fondo del combate (con texto QRO) -->
+        <section class="hero-section hero-entrenamientos">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Rutinas de la<br>semana</h1>
+                
+                <div class="hero-rutinas-list">
+                    <p class="hero-rutinas-label">Rutinas:</p>
+                    <ul class="rutinas-bullet-list">
+                        <li>resistencia</li>
+                        <li>fuerza</li>
+                        <li>velocidad</li>
+                        <li>flexibilidad</li>
+                        <li>potencia</li>
+                        <li>agresividad</li>
+                    </ul>
+                </div>
+
+                <div class="hero-actions">
+                    <button type="button" class="btn-more-info">Más información</button>
+                </div>
+
+                <!-- Tarjetas de Estadísticas Principales -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-red"></span>
+                        <h2 class="stat-value">3</h2>
+                        <p class="stat-label">Sesiones</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-green"></span>
+                        <h2 class="stat-value">4h 20m</h2>
+                        <p class="stat-label">Entrenamientos</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-purple"></span>
+                        <h2 class="stat-value">75%</h2>
+                        <p class="stat-label">Meta semanal</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-blue"></span>
+                        <h2 class="stat-value">24</h2>
+                        <p class="stat-label">Días para competir</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planificación Semanal dentro del hero -->
+            <div class="planificacion-wrapper">
+                <div class="section-tag">PLANIFICACIÓN SEMANAL</div>
+                <h2 class="section-title">14 – 20 de abril</h2>
+                <p class="section-subtitle">Tu carga de entrenamiento de un vistazo.</p>
+
+                <div class="semana-slider">
+                    <article class="dia-card">
+                        <span class="dia-nombre">lun</span>
+                        <span class="dia-numero">14</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Técnica</p>
+                        <p class="dia-duracion">60<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">mar</span>
+                        <span class="dia-numero">15</span>
+                        <div class="dia-bar" style="background-color: #9385FF;"></div>
+                        <p class="dia-tipo">Fuerza</p>
+                        <p class="dia-duracion">45<br>min</p>
+                    </article>
+
+                    <!-- Miércoles activo -->
+                    <article class="dia-card dia-activo">
+                        <span class="dia-nombre">mié</span>
+                        <span class="dia-numero">16</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">90<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">jue</span>
+                        <span class="dia-numero">17</span>
+                        <div class="dia-bar" style="background-color: #FFBF47;"></div>
+                        <p class="dia-tipo">Poomsae</p>
+                        <p class="dia-duracion">50<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">vie</span>
+                        <span class="dia-numero">18</span>
+                        <div class="dia-bar" style="background-color: #2BCBE9;"></div>
+                        <p class="dia-tipo">Rendimiento</p>
+                        <p class="dia-duracion">40<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">sáb</span>
+                        <span class="dia-numero">19</span>
+                        <div class="dia-bar" style="background-color: #FF7658;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">75<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">dom</span>
+                        <span class="dia-numero">20</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Recuperación</p>
+                        <p class="dia-duracion">Descanso</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Biblioteca de Rutinas -->
+        <section class="biblioteca-section">
+            <div class="section-header-row">
+                <div>
+                    <span class="section-tag">BIBLIOTECA</span>
+                    <h2 class="section-title">Rutinas para cada objetivo</h2>
+                    <p class="section-subtitle">Selecciona una rutina y empieza a entrenar.</p>
+                </div>
+                <button type="button" class="btn-green-neon">+ Crear rutina</button>
+            </div>
+
+            <div class="biblioteca-grid">
+                <!-- Tarjeta 1: Piernas explosivas (Técnica) -->
+                <article class="rutina-card">
+                    <div class="rutina-badge-pill pill-cyan">Técnica</div>
+                    <h3 class="rutina-title">Piernas explosivas</h3>
+                    <p class="rutina-meta">45 min • Intermedio</p>
+                    <ul class="rutina-checklist">
+                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
+                        <li><span class="rutina-check-bullet">✓</span> Bloque técnico principal</li>
+                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
+                    </ul>
+                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
+                </article>
+
+                <!-- Tarjeta 2: Sparring: distancia -->
+                <article class="rutina-card">
+                    <div class="rutina-badge-pill pill-orange">Sparring</div>
+                    <h3 class="rutina-title">Sparring: distancia</h3>
+                    <p class="rutina-meta">60 min • Intermedio</p>
+                    <ul class="rutina-checklist">
+                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
+                        <li><span class="rutina-check-bullet">✓</span> Bloque táctico principal</li>
+                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
+                    </ul>
+                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
+                </article>
+
+                <!-- Tarjeta 3: Movilidad de cadera -->
+                <article class="rutina-card">
+                    <div class="rutina-badge-pill pill-purple-light">Flexibilidad</div>
+                    <h3 class="rutina-title">Movilidad de cadera</h3>
+                    <p class="rutina-meta">25 min • Avanzado</p>
+                    <ul class="rutina-checklist">
+                        <li><span class="rutina-check-bullet">✓</span> Calentamiento dinámico</li>
+                        <li><span class="rutina-check-bullet">✓</span> Bloque técnico principal</li>
+                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
+                    </ul>
+                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
+                </article>
+
+                <!-- Tarjeta 4: Koryo técnico -->
+                <article class="rutina-card">
+                    <div class="rutina-badge-pill pill-yellow">Poomsae</div>
+                    <h3 class="rutina-title">Koryo técnico</h3>
+                    <p class="rutina-meta">50 min • Intermedio</p>
+                    <ul class="rutina-checklist">
+                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
+                        <li><span class="rutina-check-bullet">✓</span> Bloque técnico principal</li>
+                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
+                    </ul>
+                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
+                </article>
+
+                <!-- Tarjeta 5: Fuerza específica -->
+                <article class="rutina-card">
+                    <div class="rutina-badge-pill pill-purple">Fuerza</div>
+                    <h3 class="rutina-title">Fuerza específica</h3>
+                    <p class="rutina-meta">40 min • Intermedio</p>
+                    <ul class="rutina-checklist">
+                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
+                        <li><span class="rutina-check-bullet">✓</span> Bloque de fuerza explosiva</li>
+                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
+                    </ul>
+                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
+                </article>
+
+                <!-- Tarjeta 6: Cardio de combate -->
+                <article class="rutina-card">
+                    <div class="rutina-badge-pill pill-cyan">Resistencia</div>
+                    <h3 class="rutina-title">Cardio de combate</h3>
+                    <p class="rutina-meta">35 min • Avanzado</p>
+                    <ul class="rutina-checklist">
+                        <li><span class="rutina-check-bullet">✓</span> Calentamiento progresivo</li>
+                        <li><span class="rutina-check-bullet">✓</span> Bloque HIIT de combate</li>
+                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
+                    </ul>
+                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Planificación y Calendario de Entrenamientos -->
+        <section class="calendario-section">
+            <div class="section-header-row">
+                <div>
+                    <span class="section-tag">PLANIFICACIÓN</span>
+                    <h2 class="section-title">Calendario de entrenamientos</h2>
+                    <p class="section-subtitle">Semana del 14 al 20 de abril • Vista semanal</p>
+                </div>
+                <button type="button" class="btn-green-neon">+ Nueva sesión</button>
+            </div>
+
+            <!-- Grilla interactiva tipo Calendar de Figma -->
+            <div class="calendar-wrapper">
+                <div class="calendar-grid">
+                    <!-- Fila de Encabezado de Días -->
+                    <div class="cal-cell cal-header cal-corner">Hora</div>
+                    <div class="cal-cell cal-header">Lun 14</div>
+                    <div class="cal-cell cal-header">Mar 15</div>
+                    <div class="cal-cell cal-header cal-header-active">Mié 16</div>
+                    <div class="cal-cell cal-header">Jue 17</div>
+                    <div class="cal-cell cal-header">Vie 18</div>
+                    <div class="cal-cell cal-header">Sáb 19</div>
+                    <div class="cal-cell cal-header">Dom 20</div>
+
+                    <!-- Fila 10:00 -->
+                    <div class="cal-cell cal-time">10:00</div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+
+                    <!-- Fila 12:00 -->
+                    <div class="cal-cell cal-time">12:00</div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell">
+                        <div class="cal-event event-rose">
+                            <strong>Sparring libre</strong>
+                            <span>12:00 • 75 min</span>
+                        </div>
+                    </div>
+                    <div class="cal-cell"></div>
+
+                    <!-- Fila 14:00 -->
+                    <div class="cal-cell cal-time">14:00</div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+
+                    <!-- Fila 16:00 -->
+                    <div class="cal-cell cal-time">16:00</div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+
+                    <!-- Fila 17:00 -->
+                    <div class="cal-cell cal-time">17:00</div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell">
+                        <div class="cal-event event-purple">
+                            <strong>Fuerza explosiva</strong>
+                            <span>17:00 • 45 min</span>
+                        </div>
+                    </div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell">
+                        <div class="cal-event event-cyan">
+                            <strong>Resistencia</strong>
+                            <span>17:00 • 40 min</span>
+                        </div>
+                    </div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+
+                    <!-- Fila 18:00 -->
+                    <div class="cal-cell cal-time">18:00</div>
+                    <div class="cal-cell">
+                        <div class="cal-event event-green">
+                            <strong>Técnica de piernas</strong>
+                            <span>18:00 • 60 min</span>
+                        </div>
+                    </div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell">
+                        <div class="cal-event event-orange">
+                            <strong>Sparring táctico</strong>
+                            <span>18:00 • 90 min</span>
+                        </div>
+                    </div>
+                    <div class="cal-cell">
+                        <div class="cal-event event-amber">
+                            <strong>Poomsae • Koryo</strong>
+                            <span>18:00 • 50 min</span>
+                        </div>
+                    </div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+
+                    <!-- Fila 20:00 -->
+                    <div class="cal-cell cal-time">20:00</div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                    <div class="cal-cell"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

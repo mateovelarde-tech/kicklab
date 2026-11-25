@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickLab - Control de Avances</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado y Navegación Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entrenamientos.html">Entrenamientos</a></li>
+                <li><a href="avances.html" class="active">Avances</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- Hero Section con foto de combate y proyección aérea -->
+        <section class="hero-section hero-avances">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Control de<br>avances</h1>
+                <p class="hero-subtitle">
+                    calendarios<br>
+                    base de datos<br>
+                    colección de sesiones
+                </p>
+                <div class="hero-actions">
+                    <button type="button" class="btn-more-info">Más información</button>
+                </div>
+
+                <!-- Tarjetas de Estadísticas Principales -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-red"></span>
+                        <h2 class="stat-value">3</h2>
+                        <p class="stat-label">Sesiones</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-green"></span>
+                        <h2 class="stat-value">4h 20m</h2>
+                        <p class="stat-label">Entrenamientos</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-purple"></span>
+                        <h2 class="stat-value">75%</h2>
+                        <p class="stat-label">Meta semanal</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-indicator stat-blue"></span>
+                        <h2 class="stat-value">24</h2>
+                        <p class="stat-label">Días para competir</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planificación Semanal dentro del hero -->
+            <div class="planificacion-wrapper">
+                <div class="section-tag">PLANIFICACIÓN SEMANAL</div>
+                <h2 class="section-title">14 – 20 de abril</h2>
+                <p class="section-subtitle">Tu carga de entrenamiento de un vistazo.</p>
+
+                <div class="semana-slider">
+                    <article class="dia-card">
+                        <span class="dia-nombre">lun</span>
+                        <span class="dia-numero">14</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Técnica</p>
+                        <p class="dia-duracion">60<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">mar</span>
+                        <span class="dia-numero">15</span>
+                        <div class="dia-bar" style="background-color: #9385FF;"></div>
+                        <p class="dia-tipo">Fuerza</p>
+                        <p class="dia-duracion">45<br>min</p>
+                    </article>
+
+                    <article class="dia-card dia-activo">
+                        <span class="dia-nombre">mié</span>
+                        <span class="dia-numero">16</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">90<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">jue</span>
+                        <span class="dia-numero">17</span>
+                        <div class="dia-bar" style="background-color: #FFBF47;"></div>
+                        <p class="dia-tipo">Poomsae</p>
+                        <p class="dia-duracion">50<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">vie</span>
+                        <span class="dia-numero">18</span>
+                        <div class="dia-bar" style="background-color: #2BCBE9;"></div>
+                        <p class="dia-tipo">Rendimiento</p>
+                        <p class="dia-duracion">40<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">sáb</span>
+                        <span class="dia-numero">19</span>
+                        <div class="dia-bar" style="background-color: #FF7658;"></div>
+                        <p class="dia-tipo">Sparring</p>
+                        <p class="dia-duracion">75<br>min</p>
+                    </article>
+
+                    <article class="dia-card">
+                        <span class="dia-nombre">dom</span>
+                        <span class="dia-numero">20</span>
+                        <div class="dia-bar" style="background-color: #3EE58F;"></div>
+                        <p class="dia-tipo">Recuperación</p>
+                        <p class="dia-duracion">Descanso</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Base de Datos Personal -->
+        <section class="avances-section">
+            <div class="section-header-intro">
+                <span class="section-tag">MODELO DE INFORMACIÓN</span>
+                <h2 class="section-title">Base de datos personal</h2>
+                <p class="section-subtitle">Cómo se organizan y relacionan tus registros</p>
+            </div>
+
+            <!-- Fila de 4 Tarjetas de Tablas de BD -->
+            <div class="db-tables-grid">
+                <div class="db-card">
+                    <div class="db-header-pill">
+                        <span class="db-dot dot-purple"></span>
+                        <span class="db-name">Usuarios</span>
+                    </div>
+                    <span class="db-count">1 registros</span>
+                </div>
+
+                <div class="db-card">
+                    <div class="db-header-pill">
+                        <span class="db-dot dot-green"></span>
+                        <span class="db-name">Sesiones</span>
+                    </div>
+                    <span class="db-count">24 registros</span>
+                </div>
+
+                <div class="db-card">
+                    <div class="db-header-pill">
+                        <span class="db-dot dot-cyan"></span>
+                        <span class="db-name">Rutinas</span>
+                    </div>
+                    <span class="db-count">6 registros</span>
+                </div>
+
+                <div class="db-card">
+                    <div class="db-header-pill">
+                        <span class="db-dot dot-orange"></span>
+                        <span class="db-name">Torneos</span>
+                    </div>
+                    <span class="db-count">2 registros</span>
+                </div>
+            </div>
+
+            <!-- Tabla de Colección: Sesiones -->
+            <article class="coleccion-card">
+                <div class="coleccion-header">
+                    <h3 class="coleccion-title">Colección: sesiones</h3>
+                    <span class="badge-sincronizado">SINCRONIZADO</span>
+                </div>
+
+                <div class="table-responsive-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Tipo</th>
+                                <th>Fecha</th>
+                                <th>Duración</th>
+                                <th>Estado</th>
+                                <th>Propietario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-nombre">Sparring técnico</td>
+                                <td>Sparring</td>
+                                <td>16 abr, 18:00</td>
+                                <td>80 min</td>
+                                <td><span class="status-pill status-completado">Completado</span></td>
+                                <td class="td-propietario">Andrea</td>
+                            </tr>
+                            <tr>
+                                <td class="td-nombre">Técnica de piernas</td>
+                                <td>Técnica</td>
+                                <td>14 abr, 18:00</td>
+                                <td>60 min</td>
+                                <td><span class="status-pill status-completado">Completado</span></td>
+                                <td class="td-propietario">Andrea</td>
+                            </tr>
+                            <tr>
+                                <td class="td-nombre">Fuerza explosiva</td>
+                                <td>Fuerza</td>
+                                <td>15 abr, 17:30</td>
+                                <td>45 min</td>
+                                <td><span class="status-pill status-completado">Completado</span></td>
+                                <td class="td-propietario">Andrea</td>
+                            </tr>
+                            <tr>
+                                <td class="td-nombre">Poomsae • Koryo</td>
+                                <td>Poomsae</td>
+                                <td>17 abr, 18:30</td>
+                                <td>50 min</td>
+                                <td><span class="status-pill status-planificado">Planificado</span></td>
+                                <td class="td-propietario">Andrea</td>
+                            </tr>
+                            <tr>
+                                <td class="td-nombre">Resistencia específica</td>
+                                <td>Resistencia</td>
+                                <td>18 abr, 17:00</td>
+                                <td>40 min</td>
+                                <td><span class="status-pill status-planificado">Planificado</span></td>
+                                <td class="td-propietario">Andrea</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Banner Verde Inferior: Privacidad por Propietario -->
+            <div class="privacy-banner">
+                <span class="privacy-tag">PRIVACIDAD POR PROPIETARIO</span>
+                <span class="privacy-text">Cada sesión, rutina y torneo queda vinculado a la cuenta que lo creó.</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
