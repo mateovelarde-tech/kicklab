@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KickLab - Rutinas y Entrenamientos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/modals.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -149,83 +150,7 @@
             </div>
 
             <div class="biblioteca-grid">
-                <!-- Tarjeta 1: Piernas explosivas (Técnica) -->
-                <article class="rutina-card">
-                    <div class="rutina-badge-pill pill-cyan">Técnica</div>
-                    <h3 class="rutina-title">Piernas explosivas</h3>
-                    <p class="rutina-meta">45 min • Intermedio</p>
-                    <ul class="rutina-checklist">
-                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
-                        <li><span class="rutina-check-bullet">✓</span> Bloque técnico principal</li>
-                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
-                    </ul>
-                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
-                </article>
-
-                <!-- Tarjeta 2: Sparring: distancia -->
-                <article class="rutina-card">
-                    <div class="rutina-badge-pill pill-orange">Sparring</div>
-                    <h3 class="rutina-title">Sparring: distancia</h3>
-                    <p class="rutina-meta">60 min • Intermedio</p>
-                    <ul class="rutina-checklist">
-                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
-                        <li><span class="rutina-check-bullet">✓</span> Bloque táctico principal</li>
-                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
-                    </ul>
-                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
-                </article>
-
-                <!-- Tarjeta 3: Movilidad de cadera -->
-                <article class="rutina-card">
-                    <div class="rutina-badge-pill pill-purple-light">Flexibilidad</div>
-                    <h3 class="rutina-title">Movilidad de cadera</h3>
-                    <p class="rutina-meta">25 min • Avanzado</p>
-                    <ul class="rutina-checklist">
-                        <li><span class="rutina-check-bullet">✓</span> Calentamiento dinámico</li>
-                        <li><span class="rutina-check-bullet">✓</span> Bloque técnico principal</li>
-                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
-                    </ul>
-                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
-                </article>
-
-                <!-- Tarjeta 4: Koryo técnico -->
-                <article class="rutina-card">
-                    <div class="rutina-badge-pill pill-yellow">Poomsae</div>
-                    <h3 class="rutina-title">Koryo técnico</h3>
-                    <p class="rutina-meta">50 min • Intermedio</p>
-                    <ul class="rutina-checklist">
-                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
-                        <li><span class="rutina-check-bullet">✓</span> Bloque técnico principal</li>
-                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
-                    </ul>
-                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
-                </article>
-
-                <!-- Tarjeta 5: Fuerza específica -->
-                <article class="rutina-card">
-                    <div class="rutina-badge-pill pill-purple">Fuerza</div>
-                    <h3 class="rutina-title">Fuerza específica</h3>
-                    <p class="rutina-meta">40 min • Intermedio</p>
-                    <ul class="rutina-checklist">
-                        <li><span class="rutina-check-bullet">✓</span> Calentamiento específico</li>
-                        <li><span class="rutina-check-bullet">✓</span> Bloque de fuerza explosiva</li>
-                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
-                    </ul>
-                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
-                </article>
-
-                <!-- Tarjeta 6: Cardio de combate -->
-                <article class="rutina-card">
-                    <div class="rutina-badge-pill pill-cyan">Resistencia</div>
-                    <h3 class="rutina-title">Cardio de combate</h3>
-                    <p class="rutina-meta">35 min • Avanzado</p>
-                    <ul class="rutina-checklist">
-                        <li><span class="rutina-check-bullet">✓</span> Calentamiento progresivo</li>
-                        <li><span class="rutina-check-bullet">✓</span> Bloque HIIT de combate</li>
-                        <li><span class="rutina-check-bullet">✓</span> Vuelta a la calma</li>
-                    </ul>
-                    <button type="button" class="btn-rutina-action">Iniciar sesión</button>
-                </article>
+                <!-- Se renderiza dinámicamente con js/entrenamientos.js -->
             </div>
         </section>
 
@@ -356,5 +281,123 @@
             </div>
         </section>
     </main>
+
+    <!-- Modal para Crear Nueva Rutina -->
+    <div id="modal-crear-rutina" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Crear Nueva Rutina</h3>
+                <button type="button" class="btn-close-modal">&times;</button>
+            </div>
+            <form id="form-nueva-rutina">
+                <div class="form-group">
+                    <label class="field-label">TÍTULO DE LA RUTINA</label>
+                    <input type="text" id="rutina-titulo" class="input-control" placeholder="Ej: Explosividad de giros y fintas" required>
+                </div>
+                <div class="form-row-dual">
+                    <div class="form-col">
+                        <label class="field-label">CATEGORÍA</label>
+                        <select id="rutina-categoria" class="input-control select-control">
+                            <option value="Técnica" selected>Técnica</option>
+                            <option value="Sparring">Sparring</option>
+                            <option value="Flexibilidad">Flexibilidad</option>
+                            <option value="Poomsae">Poomsae</option>
+                            <option value="Fuerza">Fuerza</option>
+                            <option value="Resistencia">Resistencia</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <label class="field-label">NIVEL</label>
+                        <select id="rutina-nivel" class="input-control select-control">
+                            <option value="Básico">Básico</option>
+                            <option value="Intermedio" selected>Intermedio</option>
+                            <option value="Avanzado">Avanzado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="field-label">DURACIÓN ESTIMADA</label>
+                    <input type="text" id="rutina-duracion" class="input-control" placeholder="Ej: 50 min" value="45 min">
+                </div>
+                <div class="form-group">
+                    <label class="field-label">FASES DEL ENTRENAMIENTO</label>
+                    <input type="text" id="rutina-fase1" class="input-control" placeholder="Fase 1 (ej: Calentamiento específico)" value="Calentamiento dinámico" style="margin-bottom: 8px;">
+                    <input type="text" id="rutina-fase2" class="input-control" placeholder="Fase 2 (ej: Bloque técnico principal)" value="Bloque técnico principal" style="margin-bottom: 8px;">
+                    <input type="text" id="rutina-fase3" class="input-control" placeholder="Fase 3 (ej: Vuelta a la calma)" value="Vuelta a la calma">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-blue btn-close-modal">Cancelar</button>
+                    <button type="submit" class="btn-green-neon">Guardar Rutina</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para Nueva Sesión en Calendario -->
+    <div id="modal-nueva-sesion-cal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Programar Sesión en Calendario</h3>
+                <button type="button" class="btn-close-modal">&times;</button>
+            </div>
+            <form id="form-nueva-sesion-cal">
+                <div class="form-group">
+                    <label class="field-label">NOMBRE DE LA SESIÓN</label>
+                    <input type="text" id="cal-titulo" class="input-control" placeholder="Ej: Sparring táctico con petos" required>
+                </div>
+                <div class="form-row-dual">
+                    <div class="form-col">
+                        <label class="field-label">DÍA DE LA SEMANA</label>
+                        <select id="cal-dia" class="input-control select-control">
+                            <option value="lun">Lunes</option>
+                            <option value="mar">Martes</option>
+                            <option value="mie" selected>Miércoles</option>
+                            <option value="jue">Jueves</option>
+                            <option value="vie">Viernes</option>
+                            <option value="sab">Sábado</option>
+                            <option value="dom">Domingo</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <label class="field-label">HORA</label>
+                        <select id="cal-hora" class="input-control select-control">
+                            <option value="10:00">10:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00" selected>18:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row-dual">
+                    <div class="form-col">
+                        <label class="field-label">DURACIÓN</label>
+                        <input type="text" id="cal-duracion" class="input-control" value="60 min">
+                    </div>
+                    <div class="form-col">
+                        <label class="field-label">COLOR DE IDENTIFICACIÓN</label>
+                        <select id="cal-color" class="input-control select-control">
+                            <option value="event-green">Verde (Técnica / Base)</option>
+                            <option value="event-orange">Naranja (Sparring)</option>
+                            <option value="event-purple">Púrpura (Fuerza)</option>
+                            <option value="event-amber">Amarillo (Poomsae)</option>
+                            <option value="event-cyan">Cian (Resistencia)</option>
+                            <option value="event-rose">Rosa (Libre / Combate)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-blue btn-close-modal">Cancelar</button>
+                    <button type="submit" class="btn-green-neon">Agendar Sesión</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts de interactividad y persistencia -->
+    <script src="js/storage.js"></script>
+    <script src="js/entrenamientos.js"></script>
 </body>
 </html>

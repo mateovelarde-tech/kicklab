@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KickLab - Entrenamientos de Taekwondo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/modals.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -254,7 +255,7 @@
         </section>
 
         <!-- Sección: Finalizar sesión -->
-        <section class="finalizar-section">
+        <section class="finalizar-section" id="finalizar-sesion">
             <div class="finalizar-container">
                 <!-- Columna izquierda: Título y Pasos -->
                 <div class="finalizar-intro">
@@ -335,5 +336,46 @@
             </div>
         </section>
     </main>
+
+    <!-- Modal para Añadir Nuevo Torneo -->
+    <div id="modal-torneo" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Añadir Nuevo Torneo</h3>
+                <button type="button" class="btn-close-modal">&times;</button>
+            </div>
+            <form id="form-nuevo-torneo">
+                <div class="form-group">
+                    <label class="field-label">NOMBRE DEL TORNEO</label>
+                    <input type="text" id="torneo-nombre" class="input-control" placeholder="Ej: Open Internacional de Taekwondo" required>
+                </div>
+                <div class="form-group">
+                    <label class="field-label">LUGAR / SEDE</label>
+                    <input type="text" id="torneo-lugar" class="input-control" placeholder="Ej: Palacio de los Deportes, Madrid" required>
+                </div>
+                <div class="form-row-dual">
+                    <div class="form-col">
+                        <label class="field-label">CATEGORÍA</label>
+                        <input type="text" id="torneo-categoria" class="input-control" value="Senior - 68 kg">
+                    </div>
+                    <div class="form-col">
+                        <label class="field-label">DÍA Y MES</label>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="number" id="torneo-dia" class="input-control" placeholder="Día" min="1" max="31" value="15" style="width: 70px;">
+                            <input type="text" id="torneo-mes" class="input-control" placeholder="Mes (ej: nov)" value="nov">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-blue btn-close-modal">Cancelar</button>
+                    <button type="submit" class="btn-green-neon">Guardar Torneo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts de interactividad y persistencia -->
+    <script src="js/storage.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

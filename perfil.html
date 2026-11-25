@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KickLab - Configura tu Perfil</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/modals.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -235,5 +236,90 @@
             <p class="perfil-footer-disclaimer">Tus datos personales y deportivos no aparecen públicamente.</p>
         </section>
     </main>
+
+    <!-- Modal Recordatorios -->
+    <div id="modal-recordatorios" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Recordatorios de Entrenamiento</h3>
+                <button type="button" class="btn-close-modal">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label class="field-label">FRECUENCIA DE AVISOS</label>
+                    <select class="input-control select-control">
+                        <option>30 minutos antes de la sesión</option>
+                        <option>1 hora antes de la sesión</option>
+                        <option>Por la mañana (08:00 AM)</option>
+                        <option>Sin recordatorios</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="field-label">NOTIFICACIONES DE PESO</label>
+                    <select class="input-control select-control">
+                        <option>Diario al despertar</option>
+                        <option>Cada semana</option>
+                        <option>Solo antes de competir</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-blue btn-close-modal">Cancelar</button>
+                    <button type="submit" class="btn-green-neon">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Visibilidad -->
+    <div id="modal-visibilidad" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Visibilidad de tus Sesiones</h3>
+                <button type="button" class="btn-close-modal">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label class="field-label">PRIVACIDAD DE PERFIL</label>
+                    <select class="input-control select-control">
+                        <option>Privada (Solo tú puedes ver tus registros)</option>
+                        <option>Equipo / Dojang (Visible para tu entrenador)</option>
+                        <option>Pública (Atleta federado)</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-blue btn-close-modal">Cancelar</button>
+                    <button type="submit" class="btn-green-neon">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Seguridad -->
+    <div id="modal-seguridad" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Seguridad de la Cuenta</h3>
+                <button type="button" class="btn-close-modal">&times;</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label class="field-label">CONTRASEÑA ACTUAL</label>
+                    <input type="password" class="input-control" placeholder="••••••••">
+                </div>
+                <div class="form-group">
+                    <label class="field-label">NUEVA CONTRASEÑA</label>
+                    <input type="password" class="input-control" placeholder="Mínimo 8 caracteres">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-blue btn-close-modal">Cancelar</button>
+                    <button type="submit" class="btn-green-neon">Actualizar Contraseña</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts de interactividad y persistencia -->
+    <script src="js/storage.js"></script>
+    <script src="js/perfil.js"></script>
 </body>
 </html>
